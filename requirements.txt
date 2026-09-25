@@ -1,0 +1,6 @@
+# After installing, run: pip freeze > requirements.txt  to pin the exact versions on your machine
+numpy
+pandas
+scikit-learn
+matplotlib
+pytest
