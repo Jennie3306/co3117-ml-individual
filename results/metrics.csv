@@ -1,3 +1,5 @@
 date,week,model,depth,eval,macro_f1_mean,macro_f1_std,accuracy_mean,fit_time_s,notes
 2026-09-25,W05,dummy_most_frequent,C,groupkfold5_train,0.0535,0.0025,0.1912,0.08,R0 baseline
 2026-09-25,W05,logreg_sklearn,C,groupkfold5_train,0.9336,0.0416,0.9346,3.65,R0 baseline
+2026-09-26,W05,tree_max_depth_6,C,groupkfold5_train,0.8641,0.0293,0.8668,9.14,R0 tree error analysis
+2026-09-26,W05,tree_ccp_alpha_0.00224,C,groupkfold5_train,0.8679,0.0213,0.8709,24.53,R0 tree error analysis

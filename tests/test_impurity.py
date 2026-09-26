@@ -57,3 +57,8 @@ def test_best_threshold_simple():
 def test_best_threshold_constant_feature():
     thr, gain = best_threshold(np.array([7.0, 7.0, 7.0]), np.array([0, 1, 0]))
     assert thr is None and gain == pytest.approx(0.0)
+
+
+def test_best_threshold_rejects_nan():
+    with pytest.raises(ValueError):
+        best_threshold(np.array([1.0, np.nan, 3.0, 4.0]), np.array([0, 0, 1, 1]))

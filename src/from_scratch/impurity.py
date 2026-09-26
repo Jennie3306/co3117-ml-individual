@@ -1,11 +1,8 @@
-"""Decision Tree catch-up (Ch.2) — WRITE THIS YOURSELF. Do not look at reference code
-before committing your first attempt.
+"""Impurity measures and best-threshold search for one continuous feature.
 
-Requirements:
-- NumPy only.
-- Commit the first attempt with: [W05][code] impurity/split first attempt (pre-reference)
-- Only then read ML-From-Scratch (supervised_learning/decision_tree.py), fill MODEL_LOG,
-  fix if needed and commit: [W05][review] impurity/split after ML-From-Scratch
+Decision Tree catch-up (CO3117 Ch.2, Depth B). Entropy / Gini, impurity decrease
+(information gain) and midpoint-based threshold search. NumPy only.
+Missing values (NaN) are rejected explicitly instead of being routed silently.
 """
 import numpy as np
 
@@ -67,6 +64,8 @@ def best_threshold(x, y, criterion="entropy"):
     y = np.asarray(y).ravel()
     if x.size != y.size:
         raise ValueError("x and y must have the same length")
+    if np.isnan(x).any():
+        raise ValueError("x contains NaN: missing values are not supported (see MODEL_LOG)")
 
     values = np.unique(x)              # sorted distinct values
     if values.size < 2:
