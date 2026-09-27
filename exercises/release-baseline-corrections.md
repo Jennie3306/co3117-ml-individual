@@ -2,7 +2,7 @@
 
 - **First attempt:** [`exercises/release-baseline-w01-w04.pdf`](release-baseline-w01-w04.pdf) — handwritten, 3 pages, commit [`97fb616`](https://github.com/Jennie3306/co3117-ml-individual/commit/97fb616)
 - **Conditions of the attempt:** 2026-09-27, 21:30–22:15, written after reviewing the lecture slides, no Internet, no AI.
-- **Question sheet:** `Baseline_W01-W04_EN.docx` (questions drafted by Claude, no answers — see `AI_USE.md`). I chose to attempt a **subset of 7 questions** and renumbered them; the numbering below follows my answer sheet. The 4 questions I left out of the diagnostic are answered after review in the appendix.
+- **Question sheet:** `Baseline_W01-W04_EN.docx` — **self-prepared, not provided by the instructor**: the specification requires a release-day diagnostic on W01–W04 foundations + Decision Trees but gives no question set, so the 11 questions were drafted by Claude (questions only, no answers — see `AI_USE.md`). I chose to attempt a **subset of 7 questions** and renumbered them; the numbering below follows my answer sheet. The 4 questions I left out of the diagnostic are answered after review in the appendix.
 - **Checked against:** CO3117 slides *ML-Introduction* and *Decision_Tree*; Mitchell (1997) ch.3. Checking was AI-assisted (Claude compared my attempt with the slides; recorded in `AI_USE.md`).
 
 ## Summary
